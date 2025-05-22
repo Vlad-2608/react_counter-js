@@ -55,11 +55,15 @@ export const App = () => {
   };
 
   const increase = () => {
-    if (count % 5 === 0) {
-      add100();
-    }
+    setCount(prevCount => {
+      let newCount = prevCount + 1;
 
-    addOne();
+      if (prevCount % 5 === 0) {
+        newCount += 100;
+      }
+
+      return newCount;
+    });
   };
 
   return (
