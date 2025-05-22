@@ -64,18 +64,18 @@ export const App = () => {
 
   return (
     <div className="App">
-      <h1 className="App__title">{`Кількість: ${count}`}</h1>
+      <h1 className="App__title">{`Count: ${count}`}</h1>
 
       <button type="button" className="App__add-one" onClick={addOne}>
-        Додати 1
+        Add 1
       </button>
 
       <button type="button" className="App__add-100" onClick={add100}>
-        Додати 100
+        Add 100
       </button>
 
       <button type="button" className="App__increase" onClick={increase}>
-        Збільшення
+        Increase
       </button>
     </div>
   );
